@@ -1,6 +1,10 @@
-# 智题坊
+# 题匠 QuestionCraft
 
 一个功能完善的智能答题系统，采用 **Vue 3 + Element Plus + FastAPI** 技术栈构建，通过 **PyInstaller** 打包为桌面应用程序。支持题库管理、智能组卷、在线答题、自动评分和 AI 辅助功能。
+
+## 项目简介
+
+题匠（QuestionCraft）面向个人学习、教学训练与题库维护等场景，提供从 **题目录入、题库管理、试卷生成、在线作答到成绩分析** 的完整闭环。系统采用前后端分离架构，数据默认存储在本地 JSON 文件中，同时支持多种 AI 服务接入，兼顾轻量部署与功能扩展。
 
 ## ✨ 功能特性
 
@@ -14,10 +18,10 @@
 
 ### 🤖 AI 功能
 
-- **文本解析**：从文本中自动识别和解析题目
-- **图片识别**：OCR 识别图片中的题目内容
-- **智能出题**：根据知识点和难度自动生成新题目
-- **支持多种 AI 服务**：OpenAI、火山引擎、Azure 等兼容接口
+- **文本解析**：从粘贴文本中自动识别题目结构并导入题库
+- **图片识别**：通过 OCR 提取图片中的题目内容
+- **智能出题**：按知识点、题型与难度自动生成新题
+- **多服务兼容**：支持 OpenAI、火山引擎、Azure OpenAI 及其他兼容 OpenAI API 的平台
 
 ### 📦 其他特性
 
@@ -142,7 +146,7 @@ cd ../..
 pyinstaller build.spec
 ```
 
-打包后的文件位于 `dist/智题坊/` 目录。
+打包后的文件位于 `dist/题匠/` 目录。
 
 ## 📖 使用说明
 
@@ -187,7 +191,7 @@ pyinstaller build.spec
 2. 如有新版本会显示更新说明
 3. 点击"前往下载"可跳转到下载页面
 
-发布地址：<https://github.com/K-zhaochao/AnswerSystem/releases>
+发布地址：<https://github.com/lythiheu/AnswerSystem/releases>
 
 ## ⚙️ 配置说明
 
@@ -217,10 +221,13 @@ pyinstaller build.spec
 
 ## 🤝 贡献
 
-欢迎提交 Issue 和 Pull Request！
+欢迎通过以下方式参与项目建设：
+
+- 提交 Issue 反馈问题
+- 提交 Pull Request 优化功能
+- 完善文档与使用示例
 
 ## 📞 联系方式
 
 - **QQ**：[1727369245](https://qm.qq.com/q/HruBrdOukc)
-- **GitHub**：[K-zhaochao](https://github.com/K-zhaochao)
-- **赞助支持**：[爱发电](https://afdian.com/a/draven323)
+- **GitHub**：[lythiheu](https://github.com/lythiheu)
